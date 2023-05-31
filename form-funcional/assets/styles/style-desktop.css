@@ -11,7 +11,7 @@ html, body {
 }
 
 header {
-    background-color: rgb(168, 130, 238);
+    /* background-color: rgb(168, 130, 238); */
     display: flex;
     justify-content: center;
 }
@@ -23,7 +23,7 @@ header {
 }
 
 main {
-    background-color: salmon;
+    /* background-color: salmon; */
     display: flex;
     padding: 2rem 5rem;
     justify-content: space-around;
@@ -40,7 +40,7 @@ main {
     justify-content: center;
     align-items: center;
 
-    background-color: rgb(145, 194, 178);
+    /* background-color: rgb(145, 194, 178); */
 }
 
 .img-img {
@@ -52,7 +52,7 @@ main {
     justify-content: center;
     align-items: center;
     
-    background-color: rgb(223, 223, 101);
+    /* background-color: rgb(223, 223, 101); */
 }
 
 form {
@@ -67,13 +67,20 @@ form {
 
 input {
     display: block;
+
+
     margin:2% 0;
     width: 100%;
     height: 12%;
 
+    padding: 0 0 0 1rem;
+
     background-color: #dbdbdb;
     border: 0;
     border-radius: 15px;
+
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .cb{
@@ -104,6 +111,9 @@ button {
     background-color: #5aff83;
     border: 0;
     border-radius: 15px;
+
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 footer {
@@ -116,7 +126,7 @@ footer {
     width: 100%;
     height: 9%;
 
-    background-color: rgb(102, 102, 156);
+    background-color: #0F294B;
 }
 
 .footer {
