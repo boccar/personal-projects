@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root {
+  --background-color: rgb(33, 134, 156);
+  --primary-color: rgb(100, 193, 214);
+  --primary-color-darker: rgb(9, 48, 56);
+  --result-color-green: rgb(122, 255, 122);
+  --result-color-red: rgb(255, 122, 122);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 0.9em;
+  margin: 0.4em auto;
+}
+
+.tab {
+  display: flex;
+}
+
+.tab {
+  display: flex;
+}
+
+.resultado {
+  background-color: var(--result-color-green);
+  margin: 1em auto;
+  padding: 0em 0.3em;
+  border-radius:8px;
+}
+
+.resultadoRed {
+  background-color: var(--result-color-red);
+  margin: 1em auto;
+  padding: 0em 0.3em;
+  border-radius:8px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 80%;
+  margin: 50px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--background-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: var(--primary-color-darker);
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+  box-shadow: 2px 2px 3px rgb(97, 97, 97);
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+  color: var(--primary-color);
+}
