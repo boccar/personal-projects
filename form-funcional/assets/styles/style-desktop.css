@@ -116,6 +116,10 @@ button {
     font-weight: bold;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 footer {
     display: flex;
     justify-content: center;

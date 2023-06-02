@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="assets/styles/style-desktop.css">
     <link rel="stylesheet" href="assets/styles/midia.css">
-    <title>form-funcional</title>
+    <title>Salvar-email</title>
 </head>
 <body>
     <header>
@@ -18,17 +18,19 @@
             <img class="img-img" src="assets/images/undraw_people_re_8spw.svg" alt="">
         </section>
         <section class="box-form">
-            <form action="#" method="post">
-                <input placeholder="E-mail:" type="email">
-                <input placeholder="Nome:" type="text">
+            <form action="assets/scripts/salvar_dados.php" method="POST">
+                <input  placeholder="E-mail:" type="email" name="email" id="email">
+                <input placeholder="Nome:" type="text" name="nome" id="nome">
                 <div class="cb">
-                    <input type="checkbox" name="" id="icb">
-                    <p>Concordo com os termos</p>
+                    <input type="checkbox" required name="checkbox" id="icb">
+                    <p>Concordo com os <a href="https://www.sabornamesa.com.br/receita-com-macarrao/miojo" target="_blank">termos</a></p>
                 </div>
-                <button type="submit">Enviar</button>
+                <button type="submit">Save</button>
             </form>
         </section>
     </main>
     <footer><h1 class="footer">SCIENCCA</h1></footer>
+
+<!-- <script src="script.js"></script> -->
 </body>
 </html>
