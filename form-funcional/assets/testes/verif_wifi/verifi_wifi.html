@@ -1,0 +1,19 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Obter IP da Rede WiFi</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <script>
+        // Obtém o endereço IP da rede WiFi usando JavaScript
+        $.getJSON('https://api.ipify.org?format=json', function(data) {
+            // Envia o endereço IP para o servidor PHP
+            $.post('verifi_wifi.php', {enderecoIP: data.ip}, function(response) {
+                console.log(response);
+            });
+        });
+    </script>
+</body>
+</html>
