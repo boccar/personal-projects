@@ -1,0 +1,36 @@
+body {
+    background-image: url("IMG_5942.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    color: #fff;
+}
+
+img {
+    width: 200px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Cria 4 colunas com larguras iguais */
+    grid-gap: 10px;
+    /* Espaçamento entre as células */
+}
+
+
