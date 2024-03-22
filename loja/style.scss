@@ -1,0 +1,92 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        margin-right: 1.1rem;
+        padding-left: 2.2rem;
+        width: 2.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+        img {
+            width: 2rem;
+            margin-right: 1rem;
+        }
+        :hover {
+            cursor: pointer;
+        }
+    }
+}
+
+div.atention {
+    background-color: black;
+    width: 100vw;
+    height: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        margin: 0;
+        color: white;
+        font-size: 1.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+div.banner {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img.banner1 {
+        width: 90vw;
+    }
+}
+
+div.cards{
+    margin: 5rem;
+    @include flex;
+    //justify-content: space-around;
+
+    div.card{
+        background-color: rgb(205, 205, 205);
+        width: auto;
+        height: 24rem;
+
+        img.img-card {
+            width: 18rem;
+            
+        }
+
+        div.infos {
+            border: solid;
+            border-color: green;
+            height: 23%;
+        }
+    }
+}
+
